@@ -28,6 +28,7 @@ function(declare_module NAME)
         ${DM_ABSOLUTE_SOURCES}
     )
     target_link_libraries(${DM_TARGET_NAME} ${DM_PUBLICITY} ${DM_DEPENDS})
+    target_compile_features(${DM_TARGET_NAME} ${DM_PUBLICITY} cxx_std_20)
     target_include_directories(
         ${DM_TARGET_NAME} ${DM_PUBLICITY} ${DM_INCLUDES}
         "modules/${NAME}/include"
