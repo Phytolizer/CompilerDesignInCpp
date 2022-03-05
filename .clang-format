@@ -1,0 +1,6 @@
+---
+BasedOnStyle: LLVM
+PointerAlignment: Left
+IndentWidth: 4
+IndentCaseLabels: true
+ColumnLimit: 100
